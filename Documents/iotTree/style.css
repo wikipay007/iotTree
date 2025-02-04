@@ -1,0 +1,52 @@
+/* Importando fontes */
+@font-face {
+    font-family: 'MazzardHLight';
+    src: url('fonte/mazzard-h-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLBold';
+    src: url('fonte/mazzard-l-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLMedium';
+    src: url('fonte/mazzard-l-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLThin';
+    src: url('fonte/mazzard-l-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardMBlack';
+    src: url('fonte/mazzard-m-black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Sobrescrevendo classes do Bootstrap */
+body, .navbar, .nav-link, .dropdown-item {
+    font-family: 'MazzardHLight', sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: 'MazzardLBold', sans-serif !important;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'MazzardLMedium', sans-serif !important;
+}
+
+.dropdown-item {
+    font-family: 'MazzardLThin', sans-serif !important;
+}

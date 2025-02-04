@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .container-fluid img{
+            width: 190px;
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul style="list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        <li><img src="logo.png" alt="Logo" style="width: 50px;"></li>
+        <li style="flex-grow: 1; display: flex; justify-content: center;">
+          <a href="#">Link 1</a>
+          <div style="position: relative;">
+            <a href="#">Link 2</a>
+            <div style="position: absolute; top: 100%; left: 0; display: none;">
+              <a href="#">Sublink 1</a>
+              <a href="#">Sublink 2</a>
+            </div>
+          </div>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </li>
+        <li><button>Button</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    document.querySelector('nav ul li div a').addEventListener('mouseover', function() {
+      this.nextElementSibling.style.display = 'block';
+    });
+    document.querySelector('nav ul li div').addEventListener('mouseleave', function() {
+      this.querySelector('div').style.display = 'none';
+    });
+  </script>
+    
+
+</body>
+
+</html>
