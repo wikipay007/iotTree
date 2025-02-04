@@ -33,20 +33,95 @@
     font-weight: 900;
     font-style: normal;
 }
-
-/* Sobrescrevendo classes do Bootstrap */
-body, .navbar, .nav-link, .dropdown-item {
-    font-family: 'MazzardHLight', sans-serif !important;
+:root{
+    --verdeButton: #00974a;
+    --cinza: #989898;
 }
 
-.navbar-brand {
-    font-family: 'MazzardLBold', sans-serif !important;
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-nav .nav-link {
-    font-family: 'MazzardLMedium', sans-serif !important;
+.logo {
+    width: 190px;
 }
 
-.dropdown-item {
-    font-family: 'MazzardLThin', sans-serif !important;
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'MazzardLMedium';
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+li > img {
+    width: 190px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: var(--cinza);
+    padding: 10px;
+    width: 100px;
+    flex-direction: column;
+}
+.dropdown-content a{
+    color: black;
+
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--verdeButton);
+    padding: 4px;
+    width: 163px;
+    height: 42px;
+    color: white;
+    border-style: none;
+    font-family: 'MazzardLMedium';
+    font-size: 21px;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+
+.containerHero{
+    display: flex;
+}
+.direitaCont{
+    width: 50%;
+}
+.esquerdaCont{
+    width: 50%;
+}
+.imgHero img{
+    width: 90%;
+}
+
+.titulo{
+    font-family: 'mazzardLMedium';
+}
+.titulo h1{
+    font-size: 74px;
+}
+.paragrafo{
+    font-family: 'mazzardLThin';
+}
+.paragrafo p {
+    font-size: 36px;
 }
