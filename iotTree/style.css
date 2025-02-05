@@ -1,0 +1,269 @@
+/* Importando fontes */
+@font-face {
+    font-family: 'MazzardHLight';
+    src: url('fonte/mazzard-h-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLBold';
+    src: url('fonte/mazzard-l-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLMedium';
+    src: url('fonte/mazzard-l-medium.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardLThin';
+    src: url('fonte/mazzard-l-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardMBlack';
+    src: url('fonte/mazzard-m-black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F6F6F6;
+    ;
+}
+
+:root {
+    --verdeButton: #00974a;
+    --cinza: #989898;
+}
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo {
+    width: 190px;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'MazzardLMedium';
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+li>img {
+    width: 190px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: var(--verdeButton);
+    padding: 10px;
+    width: 100px;
+    flex-direction: column;
+    border-radius: 9px;
+}
+
+.dropdown-content a {
+    color: white;
+    transition: all 1s;
+
+}
+
+a:hover {
+    color: var(--verdeButton);
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--verdeButton);
+    padding: 4px;
+    width: 163px;
+    height: 42px;
+    color: white;
+    border-style: none;
+    font-family: 'MazzardLMedium';
+    font-size: 21px;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+
+.containerHero {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.direitaCont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.esquerdaCont {
+    width: 50%;
+}
+
+.imgHero {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgHero img {
+    width: 90%;
+}
+
+.titulo {
+    font-family: 'mazzardLMedium';
+}
+
+.textos {
+    margin-top: 23px;
+}
+
+.titulo h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 58px;
+}
+
+.paragrafo {
+    font-family: 'mazzardLThin';
+    display: flex;
+    
+}
+
+.paragrafo p {
+    font-size: 36px;
+}
+
+.imgPlayer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-family: 'mazzardLMedium';
+    margin: 40px 0px 40px 0px;
+}
+
+.imgPlayer p {
+    font-size: x-large;
+}
+
+.imgPlayer img {
+    width: 30%;
+
+}
+
+.imgApps {
+    width: 100%;
+}
+
+.imgApps img {
+    width: 80%;
+}
+
+.containerSobre {
+    margin: auto;
+    width: 90%;
+}
+
+.containerSobre button {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--cinza);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.containerSobre button.ativo {
+    background-color: black;
+    color: white;
+}
+
+.botoes {
+    margin-top: 40px;
+}
+
+.sobre-titulo {
+    width: 30%;
+    margin-top: 100px;
+    font-family: 'mazzardLMedium';
+    font-weight: 100 !important;
+    font-size: 92px;
+}
+
+.contSaber {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+}
+.infoDizeres{
+    display: flex;
+}
+
+.cardsInfo {
+    display: flex;
+    gap: 40px;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 458px;
+    background-color: #13663B;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'mazzardLMedium';
+    color: white;
+}
+.texto{
+    width: 70%;
+    font-size: 19px;
+}
+
+.infoCard img {
+    width: 20%;
+    margin-top: 50px;
+}
+.infoCard  button{
+    background-color: #00984A !important;
+    color: white;
+}
