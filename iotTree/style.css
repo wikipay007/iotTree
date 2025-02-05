@@ -70,6 +70,16 @@ body {
     font-family: 'MazzardLMedium';
 }
 
+.paragrafo {
+    font-family: 'mazzardLThin';
+    display: flex;
+
+}
+
+.paragrafo p {
+    font-size: 36px;
+}
+
 a {
     font-style: none;
     text-decoration: none;
@@ -98,8 +108,12 @@ li>img {
 
 .dropdown-content a {
     color: white;
-    transition: all 1s;
+    transition: all 0.5s;
 
+}
+
+.dropdown-content a:hover {
+    color: #005529;
 }
 
 a:hover {
@@ -131,7 +145,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .esquerdaCont {
@@ -159,18 +173,22 @@ button {
 
 .titulo h1 {
     font-size: 60px;
-    font-weight: 500;
     line-height: 58px;
 }
 
-.paragrafo {
-    font-family: 'mazzardLThin';
+.paragrafo-info {
+    font-family: 'mazzardLMedium';
     display: flex;
-    
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
 }
 
-.paragrafo p {
-    font-size: 36px;
+.paragrafo-info p {
+    font-size: 24px;
+    color: var(--verdeButton);
 }
 
 .imgPlayer {
@@ -186,7 +204,7 @@ button {
 }
 
 .imgPlayer img {
-    width: 30%;
+    width: 20%;
 
 }
 
@@ -214,13 +232,17 @@ button {
     color: white;
 }
 
+.containerSobre button:hover {
+    background-color: var(--verdeButton);
+    color: white;
+}
+
 .botoes {
     margin-top: 40px;
 }
 
 .sobre-titulo {
     width: 30%;
-    margin-top: 100px;
     font-family: 'mazzardLMedium';
     font-weight: 100 !important;
     font-size: 92px;
@@ -233,7 +255,8 @@ button {
     align-content: stretch;
     justify-content: space-between;
 }
-.infoDizeres{
+
+.infoDizeres {
     display: flex;
 }
 
@@ -247,23 +270,131 @@ button {
     flex-direction: column;
     width: 372px;
     height: 458px;
-    background-color: #13663B;
+    background-color: var(--verdeButton);
     border-radius: 12px;
     justify-content: space-around;
     align-items: center;
     font-family: 'mazzardLMedium';
+    padding: 8px;
     color: white;
 }
-.texto{
+
+
+.paragrafo-card {
     width: 70%;
-    font-size: 19px;
+    font-size: 17px;
+    padding: 20px;
 }
 
 .infoCard img {
-    width: 20%;
-    margin-top: 50px;
+    width: 40%;
+    margin-top: 20px;
 }
-.infoCard  button{
+
+.infoCard button {
     background-color: #00984A !important;
     color: white;
+    border: 0.5px solid white;
+}
+
+.infoCard button:hover {
+    background-color: #005529 !important;
+    color: white;
+    border: 0.5px solid #005529;
+}
+
+.container-beneficios {
+    margin: auto;
+    width: 100%;
+    background-color: #25262b;
+    border-radius: 12px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.titulo-beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'mazzardLMedium';
+    color: white;
+    font-size: 40px;
+}
+
+.imgBeneficio img {
+    width: 120px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+.flex-beneficios {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 90px;
+    gap: 17px;
+    justify-content: space-evenly;
+}
+
+.beneficioSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.textoBeneficio {
+    width: 60%;
+}
+
+.textoBeneficio p {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'mazzardLThin';
+    color: white;
+}
+
+.texto-comoAcessar {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'mazzardLMedium';
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+.card {
+    background-color: var(--verdeButton);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 423px;
+    height: 190px;
+    border-radius: 11px;
+    font-family: 'mazzardLMedium';
+    align-items: center; 
+    transition: all 0.5s; 
+}
+.card p{
+    font-size: 23px;
+}
+
+.imgCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Certifique-se de que a altura da div .imgCard seja 100% da altura da div .card */
+}
+
+.imgCard img {
+    width: 50%; /* Ajuste o tamanho conforme necessário */
+    max-height: 100%; /* Ajuste o tamanho conforme necessário */
 }
