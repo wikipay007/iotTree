@@ -166,6 +166,7 @@ button {
     align-items: flex-end;
 }
 
+
 .imgHero {
     display: flex;
     width: 100%;
@@ -175,6 +176,10 @@ button {
 
 .imgHero img {
     width: 90%;
+}
+
+.esquerdaCont-mobile {
+    display: none;
 }
 
 .titulo {
@@ -451,6 +456,12 @@ button {
         justify-content: center;
     }
 
+    .esquerdaCont {
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+
     .infoCard {
         width: 45%;
         /* height: 358px; */
@@ -595,6 +606,21 @@ button {
         padding: 10px;
     }
 
+    .esquerdaCont-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .imgHero-mobile {
+
+        width: 100%;
+
+    }
+
+    .imgHero-mobile img{
+        width: 100%;
+    }
+
     .infoCard button {
         width: 40%;
         background-color: #00984A !important;
@@ -659,4 +685,3 @@ button {
 
 
 }
-
