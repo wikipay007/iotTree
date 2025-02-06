@@ -370,6 +370,7 @@ button {
     gap: 80px;
     margin-top: 30px;
 }
+
 .card {
     background-color: var(--verdeButton);
     color: white;
@@ -380,10 +381,11 @@ button {
     height: 190px;
     border-radius: 11px;
     font-family: 'mazzardLMedium';
-    align-items: center; 
-    transition: all 0.5s; 
+    align-items: center;
+    transition: all 0.5s;
 }
-.card p{
+
+.card p {
     font-size: 23px;
 }
 
@@ -391,10 +393,98 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Certifique-se de que a altura da div .imgCard seja 100% da altura da div .card */
+    height: 100%;
+    /* Certifique-se de que a altura da div .imgCard seja 100% da altura da div .card */
 }
 
 .imgCard img {
-    width: 50%; /* Ajuste o tamanho conforme necessário */
-    max-height: 100%; /* Ajuste o tamanho conforme necessário */
+    width: 50%;
+    /* Ajuste o tamanho conforme necessário */
+    max-height: 100%;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+.btnEmpresas {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .containerHero {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .direitaCont {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin: auto;
+    }
+    .imgHero {
+        display: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoCard {
+        width: 272px;
+        height: 358px;
+    }
+
+    .sobre-titulo {
+        width: 90%;
+        font-family: 'mazzardLMedium';
+        font-weight: 100 !important;
+        font-size: 40px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contSaber {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+
+    .paragrafo-card {
+        width: 70%;
+        font-size: 10pt;
+        padding: 10px;
+    }
+    .container-beneficios {
+        margin: auto;
+        width: 90%;
+        background-color: #25262b;
+        border-radius: 12px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    .imgBeneficio img {
+        width: 50px;
+    }
+    .textoBeneficio p {
+        font-size: 10px;
+        margin: 0;
+        font-family: 'mazzardLThin';
+        color: white;
+    }
+    .cardsInfo {
+        display: flex
+    ;
+        gap: 20px;
+    }
 }
