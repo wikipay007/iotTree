@@ -45,15 +45,16 @@
           <div class="imgPlayer"><img src="img/player.png" alt="">
             <p>Ouça sobre nós</p>
           </div>
+          <div class="esquerdaCont-mobile">
+            <div class="imgHero-mobile"><img src="img/iottree-02.png" alt=""></div>
+          </div>
           <div class="imgApps"><img src="img/apps.png" alt=""></div>
         </div>
       </div>
       <div class="esquerdaCont">
         <div class="imgHero"><img src="img/iottree-02.png" alt=""></div>
       </div>
-      <div class="esquerdaCont-mobile">
-        <div class="imgHero-mobile"><img src="img/iottree-02.png" alt=""></div>
-      </div>
+
     </div>
 
     <div class="containerSobre">
@@ -169,7 +170,7 @@
 
         </div>
         <div class="col-3">
-          
+
         </div>
       </div>
     </footer>
@@ -235,33 +236,33 @@
 
   // Função para ler um cookie
   // Função para obter o valor de um cookie pelo nome
-function getCookie(name) {
+  function getCookie(name) {
     let cookieArr = document.cookie.split(';');
     for (let i = 0; i < cookieArr.length; i++) {
-        let cookie = cookieArr[i].trim();
-        if (cookie.indexOf(name) == 0) {
-            return cookie.substring(name.length, cookie.length);
-        }
+      let cookie = cookieArr[i].trim();
+      if (cookie.indexOf(name) == 0) {
+        return cookie.substring(name.length, cookie.length);
+      }
     }
     return null;
-}
+  }
 
-// Verificar se o cookie existe
-if (getCookie('myCookie') === null) {
+  // Verificar se o cookie existe
+  if (getCookie('myCookie') === null) {
     // Exibe o console.log se o cookie não existir
     window.alert("Esse site está em construção e se comporta melhor em telas com mais de 1366px 1100px")
     console.log('Cookie não encontrado. Criando o cookie...');
-    
+
     // Cria o cookie
     document.cookie = "myCookie=hasVisited; path=/; max-age=" + 60 * 60 * 24 * 30; // Cookie válido por 30 dias
-} else {
+  } else {
     // Exibe uma mensagem caso o cookie já exista
     console.log('Cookie já existe. Não exibindo o log.');
-}
+  }
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.menu-toggle').addEventListener('click', function () {
     document.querySelector('.nav-menu').classList.toggle('active');
-});
+  });
 
 </script>
 
