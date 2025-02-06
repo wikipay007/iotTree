@@ -648,6 +648,7 @@ button {
         font-size: x-large;
         margin-top: 30px;
     }
+
     .textoBeneficio p {
         font-size: 12pt;
         margin: 0;
@@ -656,5 +657,38 @@ button {
     }
 
 
+
+}
+
+@media (max-width: 1280px) {
+    .sobre-titulo {
+        width: 30%;
+        font-family: 'mazzardLMedium';
+        font-weight: 100 !important;
+        font-size: 45pt;
+    }
+
+    .contSaber {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 458px;
+        background-color: var(--verdeButton);
+        border-radius: 12px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'mazzardLMedium';
+        padding: 8px;
+        color: white;
+    }
 
 }
