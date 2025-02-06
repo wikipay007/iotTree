@@ -28,6 +28,7 @@
         </li>
         <li><button>Adote uma árvore</button></li>
       </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     </nav>
   </header>
 
@@ -255,7 +256,9 @@ if (getCookie('myCookie') === null) {
     console.log('Cookie já existe. Não exibindo o log.');
 }
 
-
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+});
 
 </script>
 
