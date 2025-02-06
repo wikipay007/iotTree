@@ -162,6 +162,8 @@ button {
 
 .esquerdaCont {
     width: 50%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .imgHero {
@@ -342,7 +344,6 @@ button {
     display: flex;
     margin: auto;
     width: 100%;
-    height: 90px;
     gap: 17px;
     justify-content: space-evenly;
 }
@@ -356,11 +357,11 @@ button {
 }
 
 .textoBeneficio {
-    width: 60%;
+    width: 100%;
 }
 
 .textoBeneficio p {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     font-family: 'mazzardLThin';
     color: white;
@@ -487,6 +488,7 @@ button {
         border-radius: 12px;
         margin-top: 60px;
         padding: 20px;
+        height: 340px;
     }
 
     .imgBeneficio img {
@@ -494,7 +496,7 @@ button {
     }
 
     .textoBeneficio p {
-        font-size: 10px;
+        font-size: 12pt;
         margin: 0;
         font-family: 'mazzardLThin';
         color: white;
@@ -574,15 +576,25 @@ button {
         gap: 20px;
         align-items: center;
     }
+
     .infoCard {
         width: 90%;
         /* height: 358px; */
     }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
     .paragrafo-card {
         width: 70%;
         font-size: 13pt;
         padding: 10px;
     }
+
     .infoCard button {
         width: 40%;
         background-color: #00984A !important;
@@ -590,6 +602,58 @@ button {
         border: 0.5px solid white;
     }
 
+    .paragrafo-info {
+        margin-bottom: 20px;
+    }
+
+    .paragrafo-info p {
+        font-size: 20px;
+        color: var(--verdeButton);
+    }
+
+    .titulo-beneficios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'mazzardLMedium';
+        color: white;
+        font-size: 30px;
+    }
+
+    .imgBeneficio {
+        width: 30%;
+
+    }
+
+    .imgBeneficio img {
+        width: 100%;
+    }
+
+    .flex-beneficios {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 90px;
+        gap: 17px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .texto-comoAcessar {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        font-family: 'mazzardLMedium';
+        font-size: x-large;
+        margin-top: 30px;
+    }
+    .textoBeneficio p {
+        font-size: 12pt;
+        margin: 0;
+        font-family: 'mazzardLThin';
+        color: white;
+    }
 
 
 
