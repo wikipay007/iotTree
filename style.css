@@ -427,6 +427,76 @@ button {
     justify-content: center;
     margin-top: 70px;
 }
+footer {
+    background-color: #25262b;
+    color: white;
+    padding: 20px 0;
+    font-family: 'mazzardLMedium';
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 10px;
+    font-family: 'MazzardLMedium';
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'mazzardLThin';
+  }
+  
+  .footer-col ul li a:hover {
+    color: var(--verdeButton);
+  }
+  
+  .footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-social a img {
+    width: 30px;
+    height: 30px;
+  }
 
 @media (max-width: 768px) {
     .container {
@@ -578,6 +648,20 @@ button {
     .paragrafo p {
         font-size: 29px;
     }
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    
+      .footer-social {
+        margin-top: 20px;
+      }
 }
 
 @media (max-width: 435px) {
